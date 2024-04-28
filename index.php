@@ -8,19 +8,6 @@ $logged_in = false;
 if (isset($_SESSION['username'])) {
     $logged_in = true;
 }
-
-// Fungsi logout
-if (isset($_GET['logout'])) {
-    // Hapus semua data sesi
-    session_unset();
-
-    // Hancurkan sesi
-    session_destroy();
-
-    // Redirect ke halaman login
-    header("Location: login.php");
-    exit;
-}
 ?>
 
 <!DOCTYPE html>
@@ -78,7 +65,7 @@ if (isset($_GET['logout'])) {
       <div class="ms-auto">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="?logout=true">Logout</a>
+            <a class="nav-link" href="logout.php">Logout</a>
           </li>
         </ul>
       </div>
