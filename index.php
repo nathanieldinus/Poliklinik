@@ -51,6 +51,11 @@ if (isset($_SESSION['username'])) {
                 Pasien
               </a>
             </li>
+            <li>
+              <a class="dropdown-item" href="obat.php">
+                Obat
+              </a>
+            </li>
           </ul>
         </li>
         <li class="nav-item">
